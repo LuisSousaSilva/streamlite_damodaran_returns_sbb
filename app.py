@@ -115,7 +115,7 @@ if weight==100:
     plot_performance = pl.ichart(portfolio, log_y=log_y, yticksuffix='$', yTitle='Valorização de investimento de 100 dólares', title=title_1, style='area')
     st.plotly_chart(plot_performance, use_container_width=False)
 
-    plot_drawdowns = pl.ichart(pl.compute_drawdowns(portfolio), colors=['darkorange'], log_y=log_y, yticksuffix='%', yTitle='Abaixo de máximos', title=title_2, style='area')
+    plot_drawdowns = pl.ichart(pl.compute_drawdowns(portfolio), colors=['darkorange'], yticksuffix='%', yTitle='Abaixo de máximos', title=title_2, style='area')
     st.plotly_chart(plot_drawdowns, use_container_width=False)
 
     performance_table = pl.compute_performance_table(portfolio, freq='years')
