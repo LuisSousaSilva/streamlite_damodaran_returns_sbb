@@ -1,4 +1,8 @@
 
+import numpy as np
+import pandas as pd
+import plotly.graph_objs as go
+
 colors_list=['royalblue', 'darkorange',
            'dimgrey', 'rgb(86, 53, 171)',  'rgb(44, 160, 44)',
            'rgb(214, 39, 40)', '#ffd166', '#62959c', '#b5179e',
