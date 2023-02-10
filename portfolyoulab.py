@@ -1,6 +1,3 @@
-import plotly.graph_objs as go
-import numpy as np
-import pandas as pd
 
 colors_list=['royalblue', 'darkorange',
            'dimgrey', 'rgb(86, 53, 171)',  'rgb(44, 160, 44)',
@@ -8,6 +5,8 @@ colors_list=['royalblue', 'darkorange',
            'rgb(148, 103, 189)', 'rgb(140, 86, 75)',
            'rgb(227, 119, 194)', 'rgb(127, 127, 127)',
            'rgb(188, 189, 34)', 'rgb(23, 190, 207)'] * 10
+
+
 
 def normalize(df):
     df = df.dropna()
@@ -458,3 +457,4 @@ def compute_portfolio(quotes, weights):
     Portfolio = Portfolio.loc[~Portfolio.index.duplicated(keep='first')]
 
     return Portfolio
+# %%
