@@ -10,8 +10,6 @@ colors_list=['royalblue', 'darkorange',
            'rgb(227, 119, 194)', 'rgb(127, 127, 127)',
            'rgb(188, 189, 34)', 'rgb(23, 190, 207)'] * 10
 
-
-
 def normalize(df):
     df = df.dropna()
     return (df / df.iloc[0]) * 100
